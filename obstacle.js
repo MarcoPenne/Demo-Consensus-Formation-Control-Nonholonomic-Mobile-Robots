@@ -11,8 +11,8 @@ let percentage = 0.8;
 
 function setup() {
 
-    unit = percentage*window.innerHeight/42;
-
+    unit = Math.min(percentage*window.innerHeight/42, percentage*window.innerWidth/52);
+    
     canvas = createCanvas(52*unit, 42*unit);
     canvas.position((window.innerWidth-52*unit)/2, (window.innerHeight-42*unit)/2);
 
@@ -34,8 +34,8 @@ function setup() {
 }
 
 window.onresize = function(){
-    unit = percentage*window.innerHeight/42;
-
+    unit = Math.min(percentage*window.innerHeight/42, percentage*window.innerWidth/52);
+    
     canvas = createCanvas(52*unit, 42*unit);
     canvas.position((window.innerWidth-52*unit)/2, (window.innerHeight-42*unit)/2);
 }
