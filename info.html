@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <script src="info.js"></script>
+    <script src="common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="topleftdiv"></div>
+
+    <div class="instructions" id="instructions">
+        <span id='close'>x</span>
+        <div class="instructiontitle">
+            <b>HOW TO USE</b><br/>
+        </div>
+        <div class="instructionsscrollable">
+            <div >
+                <img src="images/move.png" height="100em" style="float: left;"/>
+                <div style="margin-left: 15em;">
+                    <a><b>MOVE THE CAMERA</b></a><br/>
+                    <a><b>Click</b> and <b>move</b> the mouse to change the position of the <b>viewer</b></a>
+                </div>
+                
+            </div>   
+            <div class="instructionrow instructionrowwithimage">
+                <img src="images/scroll.png" height="100em" style="float: left;"/>
+                <div style="margin-left: 15em;">
+                    <a><b>ZOOM</b></a><br/>
+                    <a><b>Scroll</b> to <b>zoom</b> in and out</a>
+                </div>
+                
+            </div>   
+            
+            <div class="instructionrow instructionrowwithimage">
+                <div >
+                    <a><b>DIRECT KINEMATICS</b></a><br/>
+                    <a>The <b>Direct Kinematics</b> Mode solves the problem <i>"Given a set of angles, where is the end-effector of the robot?"</i></a>
+                </div>
+                
+            </div> 
+            <div class="instructionrow">
+                <div >
+                    <a><b>INVERSE KINEMATICS</b></a><br/>
+                    <a>The <b>Inverse Kinematics</b> Mode solves the problem <i>"Given a position in the space, what must be the angles of the robot for the end-effector to be in that position?".</i><br/>
+                    In general, it is a <b>difficult problem</b>. This application solves the problem with an <b>iterative algorithm</b> which uses a <b>gradient descent</b> approach.</a>
+                </div>
+                
+            </div> 
+            <div class="instructionrow">
+                <div >
+                    <a><b>INTERPOLATION</b></a><br/>
+                    <a>The user can choose what kind of <b>interpolation</b> is used to generate the <b>trajectories</b>.<br/>
+                    The <b>linear interpolation</b> generates trajectories in which the robot passes from a position to another with a <b>constant angular velocity</b>, following a <b>linear profile</b> of the joints position.<br/>
+                    The <b>cubic interpolation</b> generates trajectories in which the robot passes from a position to another according to a <b>cubic profile</b> of the joints position. It is more realistic since it forces the <b>initial</b> and <b>final velocity</b> to be equal to <b>zero</b>, as it is in the <b>real world</b>.</a>
+                </a>
+                </div>
+                
+            </div>
+
+            <div class="instructionrow">
+                <div >
+                    <a><b>CREDITS</b></a><br/>
+                    <a><b>Models:</b> Abandoned Warehouse Interior Scene - Aurélien Martel, 6 Axis Industrial Robot Arm - Jayson Stauffer <br/>
+                    <b>Music:</b> Funky Suspense - Benjamin Tissot (also known as Bensound)<br/>
+                    <b>Developed</b> by <b>Marco Pennese</b></a>
+                </a>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+</body>

@@ -9,6 +9,16 @@ let canvas;
 
 function setup() {
 
+    toprightdiv = document.getElementById("topleftdiv");
+    infoButton = document.createElement("img");
+    infoButton.setAttribute("src", "./images/info.svg");
+    infoButton.setAttribute("id", "infoButton");
+    infoButton.setAttribute("class", "svg");
+
+    adjustButtons()
+
+    toprightdiv.appendChild(infoButton)
+
     unit = Math.min(percentage*window.innerHeight/37, percentage*window.innerWidth/32);
     
     canvas = createCanvas(32*unit, 37*unit);

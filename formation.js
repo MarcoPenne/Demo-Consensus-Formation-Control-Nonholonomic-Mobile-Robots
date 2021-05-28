@@ -9,6 +9,17 @@ let percentage = 0.8;
 
 function setup() {
 
+
+    toprightdiv = document.getElementById("topleftdiv");
+    infoButton = document.createElement("img");
+    infoButton.setAttribute("src", "./images/info.svg");
+    infoButton.setAttribute("id", "infoButton");
+    infoButton.setAttribute("class", "svg");
+
+    adjustButtons()
+
+    toprightdiv.appendChild(infoButton)
+
     unit = Math.min(percentage*window.innerHeight/42, percentage*window.innerWidth/52);
 
     canvas = createCanvas(52*unit, 42*unit);
